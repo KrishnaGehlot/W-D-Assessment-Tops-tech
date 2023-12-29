@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+            <div class="parent">
+                <div class="child">
+                    <label for="">First Name :- </label>
+                    <input type="text" required class="input-1" id="one" placeholder=" Enter your  First-Name ">
+                </div>
+                <div class="child-1">
+                    <label for="">Last Name :- </label>
+                    <input type="text" required  class="input-1" id="two" placeholder=" Enter Your Last-Name ">
+                </div>
+                <div class="child-2">
+                    <label for="">Email :- </label>
+                    <input type="email" required class="input-2"  id="three" placeholder=" it Should contain @... ">
+                </div>
+                <div class="child-2">
+                    <label for="">Mobile No. :- </label>
+                    <input type="tel" required maxlength="10" id="four" minlength="10" class="input-3" placeholder=" Only 10 Digit are alowed ">
+                </div>
+                <div class="child-2">
+                    <label for="">Gender :- </label>
+                    <input type="radio" name="abc" class="input-4" id="five" required >
+                    <label for="">Male</label>
+                    <input type="radio" name="abc" class="input-5" id="six" required >
+                    <label for="">female</label>
+                </div>
+                <div class="child-2">
+                    <label for="">Date of birth :- </label>
+                    <input type="date" required  id="seven" class="input-6" >
+                </div>
+                <div class="child-2">
+                    <label for="" class="Address">Address  :- </label>
+                    <br>
+                    <!-- <input type="text" required  class="input-6" > -->
+                    <textarea name="" id="" cols="30"  class="input-7" rows="10"></textarea>
+                </div>
+                <div class="child-2">
+                    <label for="">City :- </label>
+                    <input type="text" required class="input-8" id="eight"  >
+                </div>
+                <div class="child-2">
+                    <label for="">Area Pin :- </label>
+                    <input type="number" required class="input-9" id="nine"  >
+                </div>
+                <div class="child-2">
+                    <label for="">State :- </label>
+                    <input type="text" required class="input-2"  id="ten" >
+                </div>
+                <div class="child-2">
+                    <label for="">Qualification :- </label>
+                    <!-- <input type="email" required class="input-10"  > -->
+                    <select name="" id="" class="input-11">
+                        <option value="">Select Qualification</option>
+                        <option value="">It</option>
+                        <option value="">Computer Science</option>
+                    </select>
+                </div>
+                <div class="child-2">
+                    <label for="">Specialization :- </label>
+                    <input type="checkbox" required class="input-12" id="eleven"  >
+                    <label for="">Computer Science</label>
+                    <br>
+                    <input type="checkbox" required class="input-13"  id="twel" >
+                    <label for="">Information Techonology</label>
+                    <br>
+                    <input type="checkbox" required class="input-13" id="Thir"  >
+                    <label for="">Computer Architecture</label>
+                    <br>
+                    <input type="checkbox" required class="input-13"  id="check" >
+                    <label for="">Tel Communcation</label>
+                </div>
+                <div class="child-1">
+                    <label for="">Password :- </label>
+                    <input type="password" required  id="password"  class="input-1" placeholder=" Enter Your Password ">
+                </div>
+                <div>
+                    <button onclick="submit()">
+                        Registered
+                    </button>
+                </div>
+            </div>
+      
+    </div>
+<script src="script.js" ></script>
+
+<!-- <script>
+    function submit() {
+    let a =  document.getElementById("one").value
+    let b =  document.getElementById("two").value
+    let c =  document.getElementById("three").value
+    let d =  document.getElementById("four").value
+    let e =  document.getElementById("five").value
+    let f =  document.getElementById("six").value
+    let g =  document.getElementById("seven").value
+    let h =  document.getElementById("eight").value
+    let i =  document.getElementById("nine").value
+    let j =  document.getElementById("ten").value
+    let k =  document.getElementById("eleven").value
+    let l =  document.getElementById("twel").value
+    let m =  document.getElementById("Thir").value
+    let n =  document.getElementById("check").value
+    let o =  document.getElementById("password").value
+    
+  if(a && b && c && d && e && f && g && h && i && j && k && l && m && n && o){
+     window.alert("Submited")
+  }
+  else{
+    if(!a){
+        window.alert("Please enter your first name").autofocus();
+     
+    }
+    if(!b){
+        window.alert("Please enter your last name"); 
+    }
+    if(!c){
+        window.alert("Please enter your Email Id ");
+    }
+
+    if(!d){
+        window.alert("Please enter your Mobile No. ");
+     
+    }
+    if(!e){
+        window.alert("Please enter your Gender");
+     
+    }
+    if(!f){
+        window.alert("Please enter your Date of birth");
+     
+    }
+    if(!g){
+        window.alert("Please enter your Address");
+     
+    }
+    if(!h){
+        window.alert("Please enter your city Name ");
+     
+    }
+    if(!i){
+        window.alert("Please enter your Area pin");
+     
+    }
+    if(!j){
+        window.alert("Please enter your State");
+     
+    }
+    if(!k){
+        window.alert("Please enter your Qualification  Name");
+     
+    }
+    if(!l){
+        window.alert("Please enter your Specialization   Name");
+     
+    }
+    if(!m){
+        window.alert("Please enter your Specialization   Name");
+     
+    }
+    if(!n){
+        window.alert("Please enter your Check Box");
+     
+    }
+    if(!o){
+        window.alert("Please enter your  Password");
+     
+    }
+    if(!a && !b && !c && !d && !e && !f && !g && !h && !i && !j && !k && !l && !m && !n && o){
+        window.alert("Please enter your  error");
+     
+    }
+    //  if(!a && !b){
+    //     alert("errrrror")
+    //  }
+
+    
+    
+  }
+
+
+
+
+
+
+    
+
+}
+</script> -->
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(189, 182, 182);
+}
+.input-1{
+    margin-left: 100px;
+    height: 35px;
+    width: 654px;
+}
+.input-2{
+    margin-left: 130px;
+    height: 35px;
+    width: 654px;
+}
+.input-8{
+    margin-left: 135px;
+    height: 35px;
+    width: 654px;
+}
+.input-10{
+    margin-left: 77px;
+    height: 35px;
+    width: 654px;
+}
+.input-9{
+    margin-left: 105px;
+    height: 35px;
+    width: 654px;
+}
+.input-3{
+    margin-left: 93px;
+    height: 35px;
+    width: 654px;
+}
+.input-6{
+    margin-left: 86px;
+    height: 35px;
+    width: 654px;
+}
+.input-7{
+    margin-left: 182px;
+    height: 105px;
+    width: 654px;
+}
+.input-4{
+    margin-left: 120px;
+    /* height: 35px; */
+    /* width: 654px; */
+}
+.input-5{
+    margin-left: 20px;
+    /* height: 35px; */
+    /* width: 654px; */
+}
+.parent{
+    margin-left: 20px;
+    padding: 7px;
+}
+.child-1{
+    padding: 5px;
+}
+.child{
+    padding: 5px;
+}
+.child-2{
+    padding: 5px;
+}
+.input-11{
+    margin-left: 80px;
+}
+.input-12{
+    margin-left: 80px;
+}
+.input-13{
+    margin-left: 190px;
+}
+button{
+    font-size: 20px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+}
