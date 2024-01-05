@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="parent">
+            <div class="child">
+                <label for="">First Name :- </label>
+                <input type="text" required class="input-1" id="one" placeholder=" Enter your  First-Name ">
+            </div>
+            <div class="child-1">
+                <label for="">Last Name :- </label>
+                <input type="text" required class="input-1" id="two" placeholder=" Enter Your Last-Name ">
+            </div>
+            <div class="child-2">
+                <label for="">Email :- </label>
+                <input type="email" required class="input-2" id="three" placeholder=" it Should contain @... ">
+            </div>
+            <div class="child-2">
+                <label for="">Mobile No. :- </label>
+                <input type="tel" required maxlength="10" id="threeone" minlength="10" class="input-3"
+                    placeholder=" Only 10 Digit are alowed ">
+            </div>
+            <div class="child-2">
+                <label for="">Gender :- </label>
+                <input type="radio" name="gender"  value="Male" class="input-4" id="maleRadio" required>
+                <label for="">Male</label>
+                <input type="radio" name="gender"  value="female" class="input-5" id="femaleRadio" required>
+                <label for="">female</label>
+            </div>
+            <div class="child-2">
+                <label for="">Date of birth :- </label>
+                <input type="datetime-local" required id="five" class="input-6">
+            </div>
+            <div class="child-2">
+                <label for="" class="Address">Address :- </label>
+                <br>
+                <!-- <input type="text" required  class="input-6" > -->
+                <textarea name="" id="six" cols="30" class="input-7" rows="10"></textarea>
+            </div>
+            <div class="child-2">
+                <label for="">City :- </label>
+                <input type="text" required class="input-8" id="seven">
+            </div>
+            <div class="child-2">
+                <label for="">Area Pin :- </label>
+                <input type="number" required class="input-9" id="eight">
+            </div>
+            <div class="child-2">
+                <label for="">State :- </label>
+                <input type="text" required class="input-2" id="nine">
+            </div>
+            <div class="child-2">
+                <label for="">Qualification :- </label>
+                <!-- <input type="email" required class="input-10"  > -->
+                <select name="" id="ten" class="input-11">
+                    <option value="">Select Qualification</option>
+                    <option value="">It</option>
+                    <option value="">Computer Science</option>
+                </select>
+            </div>
+            <div class="child-2">
+                <label for="">Specialization :- </label>
+                <input type="checkbox" required class="input-12" id="eleven">
+                <label for="">Computer Science</label>
+                <br>
+                <input type="checkbox" required class="input-13" id="eleven">
+                <label for="">Information Techonology</label>
+                <br>
+                <input type="checkbox" required class="input-13" id="eleven">
+                <label for="">Computer Architecture</label>
+                <br>
+                <input type="checkbox" required class="input-13" id="eleven">
+                <label for="">Tel Communcation</label>
+            </div>
+            <div class="child-1">
+                <label for="">Password :- </label>
+                <input type="password" required id="twelve" class="input-1" placeholder=" Enter Your Password ">
+            </div>
+            <div>
+
+                <td>
+                    <button type="submit" onclick="formvalidation()" style="background-color: green;color: white;">Registered</button>  
+                  </td>
+                <!-- <button onclick="submit()">
+                    Registered
+                </button> -->
+        <!-- <input type="submit" name="SubmitButton" value="Submit"   onClick="ValidateForm(this.form)"> -->
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
