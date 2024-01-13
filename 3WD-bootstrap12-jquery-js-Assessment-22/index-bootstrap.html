@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Date Interval Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+  <div >
+    <h1 style="margin-left: 10px;">Date Interval</h1>
+
+    <div >
+        <div >
+          <label for="startDate">From:</label>
+          <input type="date" class="text1" id="startDate" />
+        </div>
+  
+        <div>
+          <label for="endDate">To:</label>
+          <input type="date" class="text2" id="endDate" style="margin-left: 20px;" />
+        </div>
+      
+        <div >
+          <button id="calculateBtn" class="btn btn-primary">Calculate</button>
+        </div>
+      
+        <div>
+
+          <div class="resultarea">
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+            <p id="result4"></p>
+          </div>
+   
+        </div>
+      </div>
+
+  </div>
+    
+      <script>
+        $(document).ready(function() {
+          $("#calculateBtn").on("click", function() {
+            var startDate = moment($("#startDate").val());
+            var endDate = moment($("#endDate").val());
+      
+            var years = endDate.diff(startDate, 'years');
+            startDate.add(years, 'years');
+      
+            var months = endDate.diff(startDate, 'months');
+            startDate.add(months, 'months');
+      
+            var weeks = endDate.diff(startDate, 'weeks');
+            startDate.add(weeks, 'weeks');
+      
+            var days = endDate.diff(startDate, 'days');
+      
+            var resultText = ' In years: '+ years ; 
+            $("#result1").text(resultText);
+            var resultText =  'In months:, ' + months;
+            $("#result2").text(resultText);
+            var resultText = 'In weeks:' + weeks;
+            $("#result3").text(resultText);
+            var resultText = 'In days:' + days;
+            $("#result4").text(resultText);
+          });
+        });
+      </script>
+    </body>
+</html>
